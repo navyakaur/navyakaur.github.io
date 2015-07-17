@@ -1,0 +1,152 @@
+<html>
+	<head>
+		<title> navya kaur | girls who code student </title>
+		<meta name = "viewport" content = "width=device-width, initial-scale=1">
+
+	
+		<link rel = "stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css"/>
+
+		<script src = "http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+		<script>
+			function changeImage() {
+				alert($('#theChoices').val());
+				/* this will change the image */
+				$("#image1").attr('src', $(#'#theChoices').val() + '.jpg');
+			}
+		</script>
+		<style>
+			div.div1 {
+				margin: 10px;
+				position: relative;
+				left: 20px;
+				top: 2px;
+			}
+			p.p1 {
+				font-family: "Sweet Pea";
+				font-size: 55px;
+				position: relative;
+			}
+			div.gwc {
+				position: absolute;
+				left: 100px;
+				top: 120px;
+				right: 1px;
+			}
+			p.gwc {
+				position: absolute;
+				font-family: "Sweet Pea";
+				font-size: 15px;
+			}
+			div.div2 {
+				position: absolute;
+    			left: 100px;
+    			top: 150px;
+			}
+			p.p2 {
+				position: absolute;
+				font-family: "Breamcatcher";
+				font-size: 26px;
+			}
+			div.div3 {
+				position: "center";
+    			left: 100px;
+    			top: 150px;
+			}
+			div.div4 {
+				postion: "center";
+			}
+			p.p4 {
+				font-size: 35px;
+				font-family: "Breamcatcher";
+				color: #DC143C;
+			}
+			p.p5 {
+				font-size: 35px;
+				font-family: "Breamcatcher";
+				color: #DC143C;
+			}
+			p.p6 {
+				position: relative;
+				top: 40px;
+				left: 1px;
+				right: 10px;
+				font-family: "Breamcatcher";
+				font-size: 26px;
+			}
+		</style>
+	</head>
+	<body>
+		<div data-role="page" id="page1">
+			<div class = "div1">
+				<p class = "p1"><b> navya kaur </b></p>
+			</div>
+			<div class = "gwc">
+				<p class = "gwc"><i> a girls who code student </i></p>
+			</div>
+			<div class = "div2">
+				<p class = "p2"> <a href="#page2"> projects </a></p>
+				<p class = "p6"><a href="#page3"> about me </a></p>
+			</div>
+			<div class = "div3"; align = "center">
+				<a href = "file:///Users/navyakaur/Downloads/script.html">
+					<img src="cityscroller.png" width = "600"; height = "350";>
+				</a>
+			</div>
+		</div>
+
+		<!-- this is my second page-->
+		<div data-role="page" id="page2">
+			<div class = "div1">
+				<a href = "file://localhost/Users/navyakaur/Desktop/website.html">
+					<p class = "p1"><b> navya kaur </b></p>
+				</a>
+			</div>
+			<div class = "gwc">
+				<p class = "gwc"><i> a girls who code student </i></p>
+			</div>
+			<div class = "div2">
+				<p class = "p2"> <a href="#page2">projects </a></p>
+				<p class = "p6"><a href="#page3"> about me </a></p>
+			</div>
+			<div class = "div4"; align = "center">
+				<a href = "file:///Users/navyakaur/Downloads/script.html">
+					<p class = "p4"> city scroller </p>
+				</a>
+			</div>
+			<div class = "div5"; align = "center">
+				<a href = "file:///Users/navyakaur/Downloads/Fish%20Tank%202.0-1.html">
+					<p class = "p5"> fish tank </p>
+				</a>
+			</div>
+		</div>
+
+		<!--this is my third page-->
+		<div data-role="page" id="page3">
+			<div class = "div1">
+				<a href = "file://localhost/Users/navyakaur/Desktop/website.html">
+					<p class = "p1"><b> navya kaur </b></p>
+				</a>
+			</div>
+			<div class = "gwc">
+				<p class = "gwc"><i> a girls who code student </i></p>
+			</div>
+			<div class = "div2">
+				<p class = "p2"><a href="#page2"> projects </a></p>
+				<p class = "p6"><a href="#page3"> about me </a></p>
+			</div>
+			<div class = "div5">
+				<label for ="select-choice-a" class="select"> </label>
+				<select name ="select-choice-a" id="theChoices" data-native menu="false">
+					<option> choose a place: </option>
+					<option> Washington D.C. </option>
+					<option> Twin Peaks </option>
+					<option> Berkeley </option>
+					<option > New York </option>
+					<!--add a button to show an image of the animal chosen -->
+					<input type = "button" value = "Submit" data-theme ="b" onclick="changeImage()">
+				</select>
+			</div>
+		</div>
+	</body>
+</html>
